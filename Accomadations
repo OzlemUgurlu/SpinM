@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpinM - Accommodations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SpinM</h1>
+        <nav>
+     <a href="index.html" >Home</a>
+            <a href="about.html" >Program</a>
+            <a href="application.html" >Registration</a>
+            <a href="contact.html" >Contact</a>
+            <a href="past.html" class="active">Accommodations</a>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        &copy; 2026 SpinM
+    </footer>
+</body>
+</html>
