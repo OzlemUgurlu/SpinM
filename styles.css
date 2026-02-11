@@ -75,7 +75,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 3rem;
-    min-height: 150px;  /* Adjust this value based on your logo's aspect ratio */
+    min-height: 200px;  /* Adjust this value based on your logo's aspect ratio */
     display: flex;
     align-items: center;
     justify-content: center;
