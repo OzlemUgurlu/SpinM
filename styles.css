@@ -6,11 +6,9 @@ body {
 }
 
 header {
-    background-image: url("images/MMM Logo-Blue.png");
-    background-size: cover;     /* makes the image fill the banner */
-    background-position: center;
-    padding: 60px 20px;         /* makes banner taller */
-    color: white;               /* text readable on dark background */
+    background: #f1f3f7;
+    padding: 60px 20px;
+    color: #002366;  /* Changed to dark blue for better contrast */
 }
 
 nav {
@@ -73,8 +71,13 @@ footer {
     text-align: center;
     padding: 1.2rem;
     background: #002366;
+    background-image: url("images/MMM Logo-Blue.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
     margin-top: 3rem;
+    min-height: 120px;  /* Ensures footer is tall enough to show logo */
 }
 .sponsor-thanks {
     display: flex;
