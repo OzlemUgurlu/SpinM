@@ -69,13 +69,14 @@ form button:hover {
 }
 footer {
     text-align: center;
-    padding: 0;  /* Remove padding so image fills the space */
+    padding: 2rem;
     background-image: url("images/MMM Logo-DB.png");
-    background-size: cover;  /* Changed from contain to cover to fill entire footer */
+    background-size: contain;        /* Shows full logo without cropping */
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 3rem;
-    min-height: 400px;  /* Adjust this value based on your logo's aspect ratio */
+    min-height: 400px;               /* Increase/decrease to scale the logo */
+    width: 100%;                     /* Ensure full width */
     display: flex;
     align-items: center;
     justify-content: center;
