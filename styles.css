@@ -6,13 +6,13 @@ body {
 }
 
 header {
-    background: #002366;
+    background: #004aad;
     padding: 60px 20px;
     color: #fff; 
 }
 
 nav {
-    background: #002366;
+    background:  #004aad;
     display: flex;
     justify-content: center;
 }
@@ -24,7 +24,7 @@ nav a {
     transition: background 0.2s;
 }
 nav a:hover, nav a.active {
-    background: #002366;
+    background: #004aad;
 }
 main {
     max-width: 900px;
