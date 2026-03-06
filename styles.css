@@ -72,7 +72,7 @@ footer {
     text-align: center;
     padding: 0;
     background-image: url("images/SpinM-Logo.png");
-    background-size: 100% 100%;      /* Stretches to fill width AND height exactly */
+    background-size: auto 100%;      /* Stretches to fill width AND height exactly */
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 3rem;
