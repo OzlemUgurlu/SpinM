@@ -67,19 +67,17 @@ form button {
 form button:hover {
     background: #002366;
 }
+
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 0;
     background-image: url("images/MMM Logo-DB.png");
-    background-size: contain;        /* Shows full logo without cropping */
+    background-size: 100% 100%;      /* Stretches to fill width AND height exactly */
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 3rem;
-    min-height: 400px;               /* Increase/decrease to scale the logo */
-    width: 100%;                     /* Ensure full width */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 150px;                   /* Control banner height here */
 }
 .sponsor-thanks {
     display: flex;
