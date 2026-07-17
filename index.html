@@ -5,55 +5,183 @@
     <title>SpinM: Summer Program IN Mathematics - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .home-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, 480px);
+            align-items: center;
+            gap: 3rem;
+            max-width: 1500px;
+            margin: -1 auto;
+            padding: 4rem 2rem;
+        }
+
+        .home-hero__content h2 {
+            margin-top: 0;
+            font-size: clamp(2rem, 4vw, 3.75rem);
+            line-height: 1.08;
+        }
+
+        .home-hero__content p {
+            font-size: 1.08rem;
+            line-height: 1.75;
+        }
+
+        .home-hero__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.75rem;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 0.85rem 1.4rem;
+            border-radius: 999px;
+            background: #6f5cc2;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .home-button:hover,
+        .home-button:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(55, 43, 101, 0.22);
+        }
+
+        .home-button--secondary {
+            background: transparent;
+            color: #4d3e8f;
+            border: 2px solid #8a79d9;
+        }
+
+        .home-hero__flyer {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 0 20px 50px rgba(44, 35, 70, 0.16);
+        }
+
+        .home-hero__flyer img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        .home-details {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem 2rem 4rem;
+        }
+
+        @media (max-width: 850px) {
+            .home-hero {
+                grid-template-columns: 1fr;
+                padding-top: 2.5rem;
+            }
+
+            .home-hero__flyer {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .home-hero,
+            .home-details {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>SpinM: Summer Program IN Mathematics</h1>
-        <h3>Saint Louis University, St. Louis, MO</h3>
-        <h3>August 10-15, 2026</h3>
-        <nav>
-            <a href="index.html" class="active">Home</a>
+        <h2> SpinM: Summer Program IN Mathematics</h2>
+        <h3> Saint Louis University, St. Louis, MO
+            <br>
+        August 10–15, 2026</h3>
+              <nav aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
             <a href="accommodation.html">Venue</a>
             <a href="program.html">Program</a>
             <a href="registration.html">Registration</a>
             <a href="contact.html">Contact</a>
-            
-             <!-- <a href="conduct.html" class="active"> Conduct Agreement</a> -->
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>SpinM: Summer Program IN Mathematics</h2>
-            <p>The program is designed to immerse undergraduate students in advanced mathematical topics not typically
-                covered in the undergraduate curriculum, through an inquiry-based format that encourages active exploration 
-                and collaboration. Participants will engage with mathematical ideas, formulate conjectures, and work in 
-                small groups guided by graduate-student mentors. The program centers on two broad mathematical themes, analysis and algebra,
-                designed to inspire curiosity and exploration.</p>
 
-           <p>SpinM will host contributed talk sessions on Saturday, August 15, from 9am to 12:30pm. 
-If you are interested in giving a 15-minute contributed talk, please fill out 
-<a href="https://forms.gle/LZvhh1bDeGeZUVpj9">this form</a>.</p>
+    <main>
+        <section class="home-hero">
+            <div class="home-hero__content">
+                <p class="eyebrow"> A first research experience in mathematics</p>
+
+                <h2>Explore, collaborate, and discover mathematics.</h2>
+
+                <p>
+                    SpinM is an intensive one-week summer program that brings
+                    together undergraduate students for a collaborative first
+                    research experience in mathematics.
+                </p>
+
+                <p>
+                    Participants will investigate mathematical ideas, formulate
+                    conjectures, and work in small groups guided by faculty and
+                    graduate-student mentors.
+                </p>
+
+                <div class="home-hero__actions">
+                    <a class="home-button" href="registration.html"> Register to SpinM </a>
+                    <a class="home-button home-button--secondary" href="program.html">
+                        Explore the program
+                    </a>
+                </div>
+            </div>
+
+            <figure class="home-hero__flyer">
+                <a href="images/spinm-flyer.png" target="_blank" rel="noopener">
+                    <img
+                        src="images/SpinM Summer Program in Mathematics Flyer.png"
+                        alt="SpinM 2026 summer mathematics program flyer"
+                        loading="eager">
+                </a>
+            </figure>
         </section>
 
+<br><br>
+            <h2>About the program</h2>
+
+            <p>
+                The program is designed to immerse undergraduate students in
+                advanced mathematical topics not typically covered in the
+                undergraduate curriculum through an inquiry-based format that
+                encourages active exploration and collaboration.
+            </p>
+
+            <p>
+                The program centers on two broad mathematical themes—analysis
+                and enumerative combinatorics—designed to inspire curiosity,
+                mathematical creativity, and collaborative problem solving.
+            </p>
+<br>
+            <h2>Contributed talks</h2>
+
+            <p>
+                SpinM will host contributed talk sessions on Saturday,
+                August 15, from 9:00 a.m. to 12:30 p.m. To propose a
+                15-minute contributed talk, please complete
+                <a href="https://forms.gle/LZvhh1bDeGeZUVpj9">the contributed-talk form</a>.
+            </p>
+    
     </main>
+
     <footer>
-       <!-- &copy; 2026 SpinM -->
+        <!-- &copy; 2026 SpinM -->
     </footer>
 </body>
 </html>
-              <!--  Explore our program:
-            </p>
-            <ul class="home-links">
-                <li><a href="about.html">Learn About STARS@SLU</a></li>
-                <li><a href="application.html">Apply for the Program</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="past.html">See Current Cohort</a></li>
-            </ul>
-                        <section id="sponsor-thanks" class="sponsor-thanks">
-            <div class="sponsor-thanks-container">
-                <img src="images/sponsor-logo.png" class="sponsor-logo">
-                <div class="thanks-note">
-                    <p> Support for STARS@SLU is provided by the <strong>Mathematical Association of America</strong> and the <strong>Tensor Foundation.</strong></p>
-                </div>
-            </div>
-        </section>-->
